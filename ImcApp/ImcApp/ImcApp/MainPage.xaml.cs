@@ -6,20 +6,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using ContadorManual.Model;
+
 
 namespace ImcApp
 {
     public partial class MainPage : ContentPage
     {
         private Model.CalculadoraImc imc;
+        private Contador _Contador;
         public MainPage()
         {
             InitializeComponent()
-                LimpiarIU();
+            _Contador = new Contador();
+            //ConteoLabel.Text = _Contador.Conteo.ToString();
+            ConteoLabel.BindingContext = _Contador;
         }
 
         private void limpiarButton_Clicked(object sender, EventArgs e)
         {
+            _Contador.Contar();
+            //ConteoLabel.Text = _Contador.Conteo.ToString();
             LimpiarIU();
         }
         private void LimpiarIU()
@@ -32,7 +39,11 @@ namespace ImcApp
 
         private void calcularButton_Clicked(object sender, EventArgs e)
         {
-            decimal peso;
+        _Contador.ReiniciarConteo();
+        //ConteoLabel.Text = _Contador.Conteo.ToString();
+
+
+        decimal peso;
             decimal estatura;
             bool pesoEsConvertible = decimal.TryParse(pesoEntry.Text, out peso);
             bool estaturaEsConvertible = decimal.TryParse(estaturaEntry.Text, out estatura);

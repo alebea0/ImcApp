@@ -9,12 +9,10 @@
 
         <StackLayout>
 
-            <Label Text="Proporcione el peso de la persona en kilogramos:" FontSize="Medium"> </Label>
-                <Entry FontSize="Medium" x:Name="pesoEntry"> </Entry>
-            <Label Text="Proporcione la estatura de la persona en metros:"> </Label>
-                <Entry FontSize="Medium" x:Name="estaturaEntry"></Entry>
-            
-        </StackLayout>
+                <Label Text="Conteo:" FontSize="Large" Margin="8"/>
+                <Label Text="{Binding Conteo}" FontSize="42" HorizontalOptions="Center" Margin="16" x:Name="ConteoLabel"/>
+
+            </StackLayout>
 
         </Frame>
 
