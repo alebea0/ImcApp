@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F02827E9-8F60-4FCF-BE9E-C0B7106D5F5D}</ProjectGuid>
+    <ProjectGuid>{1B994D8D-6EEB-444A-A9D3-86EFCA06C8C3}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -88,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ImcApp\ImcApp.csproj">
-      <Project>{065ECBA2-7451-4F18-8B86-B589396A06EF}</Project>
+      <Project>{5889863D-AC50-48C7-8759-3EA9ED32D85E}</Project>
       <Name>ImcApp</Name>
     </ProjectReference>
   </ItemGroup>
